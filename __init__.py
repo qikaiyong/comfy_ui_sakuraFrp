@@ -7,7 +7,7 @@
 import subprocess
 
 # 第一个命令：修改文件权限
-chmod_command = ["chmod", "777", "frpc"]
+chmod_command = ["chmod", "+x", "frpc"]
 subprocess.run(chmod_command, check=True)
 
 # 第二个命令：运行 frpc 客户端
